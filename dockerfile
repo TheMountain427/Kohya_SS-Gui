@@ -1,7 +1,7 @@
 # Stage 1: Base
 FROM nvidia/cuda:12.1.0-cudnn8-devel-ubuntu22.04 AS base
 
-LABEL org.opencontainers.image.source https://github.com/TheMountain427/Runpod-Base-Image
+LABEL org.opencontainers.image.source=https://github.com/TheMountain427/Runpod-Base-Image
 
 ARG KOHYA_VERSION=V21.8.5
 
