@@ -3,7 +3,7 @@ FROM nvidia/cuda:12.1.0-cudnn8-devel-ubuntu22.04 as base
 
 ARG KOHYA_VERSION=V21.8.5
 
-SHELL ["/bin/bash -o", "pipefail -c"]
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 ENV DEBIAN_FRONTEND=noninteractive TZ=Europe/London PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=on SHELL=/bin/bash
 
 # Install Ubuntu packages
