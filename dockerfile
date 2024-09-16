@@ -3,8 +3,6 @@ FROM nvidia/cuda:12.1.0-cudnn8-devel-ubuntu22.04 AS base
 
 LABEL org.opencontainers.image.source=https://github.com/TheMountain427/Runpod-Base-Image
 
-ARG KOHYA_VERSION=V21.8.5
-
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 ENV DEBIAN_FRONTEND=noninteractive TZ=Europe/London PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=on SHELL=/bin/bash
 
